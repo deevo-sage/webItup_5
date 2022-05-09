@@ -12,8 +12,8 @@ const Home: React.FC = () => {
     }, []);
     return (
         <Flex direction="column" minH="100vh" bg="gray.900" align={"center"}>
-            {loading ? <Loading /> : <></>}
             <S1 />
+            {loading ? <Loading /> : <></>}
         </Flex>
     );
 };
