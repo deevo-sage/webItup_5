@@ -1,6 +1,5 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Flex } from "@chakra-ui/react";
-
 import { Loading } from "@components";
 import { S1 } from "@components/s1";
 
@@ -13,8 +12,8 @@ const Home: React.FC = () => {
     }, []);
     return (
         <Flex direction="column" minH="100vh" bg="gray.900" align={"center"}>
-            <S1 />
             {loading ? <Loading /> : <></>}
+            <S1 />
         </Flex>
     );
 };
